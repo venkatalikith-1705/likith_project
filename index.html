@@ -5,20 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Development Exercises</title>
   <style>
-    *{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#172033;background:#f8fafc}header{padding:4rem 1rem;text-align:center;color:white;background:linear-gradient(135deg,#123a73,#1976a8)}main{max-width:900px;margin:2rem auto;padding:0 1rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{padding:2rem;text-align:center;background:white;border:1px solid #dbe3ef;border-radius:12px;box-shadow:0 8px 24px #0f172a1a}.card a{display:inline-block;margin-top:1rem;padding:.7rem 1rem;color:white;background:#2563eb;border-radius:6px;text-decoration:none}.card a:hover{background:#1e40af}@media(max-width:650px){.grid{grid-template-columns:1fr}}
+    :root{--ink:#172033;--muted:#64748b;--paper:#f7f8fc;--line:#dbe3ef;--blue:#2563eb;--teal:#0f766e;--orange:#c2410c}
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--ink);background:var(--paper);font-family:Georgia,"Times New Roman",serif}
+    body:before{position:fixed;inset:0;z-index:-1;background-image:linear-gradient(#dbe3ef 1px,transparent 1px),linear-gradient(90deg,#dbe3ef 1px,transparent 1px);background-size:34px 34px;opacity:.32;content:""}
+    header{padding:clamp(4rem,12vw,8rem) 1.25rem 5rem;color:#fff;background:linear-gradient(135deg,#111827 0%,#173b63 52%,#0f766e 100%);text-align:center}
+    .eyebrow{margin:0 0 1rem;color:#a7f3d0;font-family:Arial,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    header h1{max-width:780px;margin:0 auto;font-size:clamp(2.8rem,7vw,5.8rem);line-height:.98;letter-spacing:-.04em}
+    header p{max-width:560px;margin:1.5rem auto 0;color:#dbeafe;font-family:Arial,sans-serif;font-size:1.05rem;line-height:1.7}
+    main{max-width:1100px;margin:-2.5rem auto 0;padding:0 1.25rem 4rem}
+    .intro{display:flex;justify-content:space-between;gap:2rem;align-items:end;margin-bottom:1.5rem;padding:1.25rem 1.5rem;background:#fffffff2;border:1px solid #fff;border-radius:14px;box-shadow:0 16px 40px #17203318;backdrop-filter:blur(12px)}
+    .intro h2{margin:0 0 .3rem;font-size:1.45rem}.intro p{margin:0;color:var(--muted);font-family:Arial,sans-serif;font-size:.9rem}.count{color:var(--blue);font-family:Arial,sans-serif;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .card{position:relative;display:flex;min-height:290px;flex-direction:column;overflow:hidden;padding:1.75rem;text-align:left;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 8px 24px #1720330d;transition:transform .25s ease,box-shadow .25s ease}
+    .card:before{position:absolute;top:0;right:0;left:0;height:5px;background:var(--accent);content:""}
+    .card:hover{transform:translateY(-7px);box-shadow:0 18px 38px #17203320}
+    .card.html{--accent:#c2410c}.card.css{--accent:#2563eb}.card.javascript{--accent:#0f766e}
+    .number{display:block;margin-bottom:2.5rem;color:var(--accent);font-family:Arial,sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .card h2{margin:0 0 .65rem;font-size:2.2rem;letter-spacing:-.03em}.card p{min-height:3.2rem;margin:0;color:var(--muted);font-family:Arial,sans-serif;font-size:.9rem;line-height:1.6}
+    .card a{display:inline-flex;align-items:center;justify-content:space-between;margin-top:auto;padding:.8rem 1rem;color:#fff;background:var(--accent);border-radius:6px;font-family:Arial,sans-serif;font-size:.82rem;font-weight:700;text-decoration:none;transition:filter .2s ease}.card a:after{margin-left:1rem;content:"->"}.card a:hover{filter:brightness(.88)}
+    footer{padding:0 1.25rem 2rem;color:var(--muted);font-family:Arial,sans-serif;font-size:.78rem;text-align:center}
+    @media(max-width:760px){.grid{grid-template-columns:1fr 1fr}.card{min-height:260px}.intro{align-items:start;flex-direction:column;gap:.5rem}}
+    @media(max-width:500px){.grid{grid-template-columns:1fr}header{padding-bottom:4rem}.card{min-height:240px}}
   </style>
 </head>
 <body>
   <header>
+    <p class="eyebrow">A practical web lab</p>
     <h1>Web Development Exercises</h1>
     <p>HTML, CSS, and JavaScript practical work</p>
   </header>
   <main>
+    <section class="intro">
+      <div><h2>Choose a track</h2><p>Small experiments, organized for focused practice.</p></div>
+      <span class="count">3 learning paths</span>
+    </section>
     <div class="grid">
-      <article class="card"><h2>HTML</h2><p>15 HTML exercises</p><a href="html/index.html">Open HTML</a></article>
-      <article class="card"><h2>CSS</h2><p>270 CSS exercises</p><a href="css/index.html">Open CSS</a></article>
-      <article class="card"><h2>JavaScript</h2><p>Programs and practical experiments</p><a href="javascript/index.html">Open JavaScript</a></article>
+      <article class="card html"><span class="number">01 / Markup</span><h2>HTML</h2><p>Build structure with forms, tables, media, and semantic elements.</p><a href="html/index.html">Open HTML</a></article>
+      <article class="card css"><span class="number">02 / Visuals</span><h2>CSS</h2><p>Shape interfaces with layouts, responsive design, animation, and UI patterns.</p><a href="css/index.html">Open CSS</a></article>
+      <article class="card javascript"><span class="number">03 / Logic</span><h2>JavaScript</h2><p>Practice programming, DOM events, browser APIs, storage, and backend ideas.</p><a href="javascript/index.html">Open JavaScript</a></article>
     </div>
   </main>
+  <footer>Open a track to begin your next experiment.</footer>
 </body>
 </html>
