@@ -1,0 +1,2 @@
+﻿/* Question 154 CSS */
+.agent-card{padding:1.25rem;background:white;border:1px solid #dbe3ef;border-radius:12px}.agent-online{color:#16a34a}.agent-busy{color:#d97706}.agent-error{color:#dc2626}.queue,.activity-log,.history{padding-left:1rem;border-left:3px solid #7c3aed}.workflow{display:flex;flex-wrap:wrap;gap:1rem}.node{padding:1rem;border:2px solid #a78bfa;border-radius:8px}

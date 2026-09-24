@@ -1,0 +1,2 @@
+﻿/* Question 53 CSS */
+.card{padding:1.5rem;background:white;border:1px solid #dbe3ef;border-radius:12px;box-shadow:0 8px 24px #0001}.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}

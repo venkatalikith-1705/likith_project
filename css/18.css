@@ -1,0 +1,2 @@
+﻿/* CSS Foundation question 18 */
+:root{--brand:#2563eb;--space:20px}button{padding:var(--space);background:var(--brand)}

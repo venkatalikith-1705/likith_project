@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Exercises</title>
+  <style>body{font-family:Arial,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;background:#f8fafc;color:#172033}h1{color:#175cd3}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem}a{display:block;padding:.65rem;text-align:center;color:#175cd3;background:white;border:1px solid #dbe3ef;border-radius:6px;text-decoration:none}a:hover{background:#dbeafe}@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}</style>
+</head>
+<body>
+  <h1>CSS Exercises</h1>
+  <p>Open one of the 270 CSS exercises:</p>
+  <div class="grid" id="links"></div>
+  <script>
+    const links = document.querySelector("#links");
+    for (let number = 1; number <= 270; number++) {
+      links.insertAdjacentHTML("beforeend", `<a href="${number}.css">${number}.css</a>`);
+    }
+  </script>
+</body>
+</html>

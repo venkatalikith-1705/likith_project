@@ -1,0 +1,2 @@
+﻿/* Question 122 CSS */
+.ai-panel{padding:1.5rem;background:linear-gradient(135deg,#eff6ff,#f0fdf4);border:1px solid #bfdbfe;border-radius:12px}.message{max-width:75%;padding:.8rem 1rem;border-radius:12px}.user{margin-left:auto;color:white;background:#2563eb}.assistant{background:white;border:1px solid #dbe3ef}.prompt{display:flex;padding:.6rem;border:1px solid #cbd5e1;border-radius:999px}.prompt input{flex:1;border:0;outline:0}.confidence{height:8px;background:#e2e8f0;border-radius:99px}.confidence:before{display:block;width:82%;height:100%;background:#16a34a;content:""}

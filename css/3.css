@@ -1,0 +1,2 @@
+﻿/* CSS Foundation question 3 */
+.parent .descendant{color:blue}.parent>.child{font-weight:bold}.sibling+.next{color:red}.sibling~.later{text-decoration:underline}

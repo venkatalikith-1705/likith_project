@@ -1,0 +1,2 @@
+﻿/* CSS Foundation question 34 */
+@keyframes bounce{50%{transform:translateY(-60px)}}.ball{animation:bounce 1s infinite}

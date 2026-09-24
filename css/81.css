@@ -1,0 +1,2 @@
+﻿/* Question 81 CSS */
+.form{display:grid;gap:1rem;max-width:500px}.form input,.form textarea,.form select{width:100%;padding:.7rem;border:1px solid #94a3b8;border-radius:6px}.form input:invalid{border-color:#dc2626}.error{color:#dc2626;font-size:.875rem}

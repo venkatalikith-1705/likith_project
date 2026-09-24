@@ -1,0 +1,2 @@
+﻿/* CSS Foundation question 22 */
+.back,.front{position:absolute}.back{z-index:1}.front{z-index:2}

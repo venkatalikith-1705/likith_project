@@ -1,0 +1,2 @@
+﻿/* Question 95 CSS */
+.dashboard{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}.metric,.chart{padding:1.25rem;background:white;border:1px solid #dbe3ef;border-radius:12px}.metric-value{font-size:2rem;font-weight:700}.bar-chart{display:flex;align-items:end;gap:.5rem;height:160px}.bar-chart>*{flex:1;background:#2563eb}.heatmap{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.heatmap>*{aspect-ratio:1;background:#93c5fd}.filter-panel{display:flex;gap:.75rem;flex-wrap:wrap;padding:1rem;background:white}

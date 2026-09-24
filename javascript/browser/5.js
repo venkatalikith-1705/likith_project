@@ -1,0 +1,2 @@
+﻿// browser experiment 5
+console.log(window.innerWidth,window.innerHeight);alert("Browser API demo");setTimeout(()=>console.log("timeout"),1000);setInterval(()=>console.log(new Date().toLocaleTimeString()),1000);console.log(location.href,navigator.language,screen.width,screen.height,navigator.onLine);navigator.geolocation?.getCurrentPosition(position=>console.log(position.coords.latitude,position.coords.longitude));

@@ -1,0 +1,2 @@
+﻿/* CSS Foundation question 33 */
+.scene{perspective:500px}.cube{transform:rotateX(45deg) rotateY(35deg);transform-style:preserve-3d}

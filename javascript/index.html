@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Exercises</title>
+  <style>body{font-family:Arial,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;background:#f8fafc;color:#172033}h1{color:#175cd3}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.6rem}a{display:block;padding:.65rem;text-align:center;color:#175cd3;background:white;border:1px solid #dbe3ef;border-radius:6px;text-decoration:none}a:hover{background:#dbeafe}.groups{display:flex;gap:1rem;flex-wrap:wrap}.groups a{padding:.8rem 1rem}@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}</style>
+</head>
+<body>
+  <h1>JavaScript Exercises</h1>
+  <div class="groups"><a href="dom/">DOM</a><a href="events/">Events</a><a href="forms/">Forms</a><a href="browser/">Browser</a><a href="storage/">Storage</a><a href="mysql/">MySQL</a><a href="nodejs/">Node.js</a><a href="supabase/">Supabase</a></div>
+  <h2>JavaScript Programs 1-67</h2>
+  <div class="grid" id="links"></div>
+  <script>
+    const links = document.querySelector("#links");
+    for (let number = 1; number <= 67; number++) {
+      links.insertAdjacentHTML("beforeend", `<a href="${number}.js">${number}.js</a>`);
+    }
+  </script>
+</body>
+</html>
